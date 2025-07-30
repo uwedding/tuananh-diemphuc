@@ -55,7 +55,8 @@
     <meta property="og:url" content="https://tuananh-diemphuc.uwedding.online" />
     <meta property="og:title" content="Thư Mời Lễ Cưới Tuấn Anh &#38; Diễm Phúc" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.dropbox.com/scl/fi/ygv7e44nqu7ic2mm0heoh/11.jpg?rlkey=erla4es58o7k9ov1owzh80mv0&st=8tys0aew&dl=0 />
+    <meta property="og:image"
+        content="https://www.dropbox.com/scl/fi/ygv7e44nqu7ic2mm0heoh/11.jpg?rlkey=erla4es58o7k9ov1owzh80mv0&st=8tys0aew&dl=0" />
     <meta property=" og:description" content="Sự hiện diện của quý khách là niềm vinh dự của gia đình chúng tôi" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" type="image/x-icon"
@@ -5858,7 +5859,7 @@
 
     <audio id="myAudio" loop="">
         <source
-            src="https://www.dropbox.com/scl/fi/zolt0w3agpmdg51df8vet/Ed-Sheeran-Perfect-Official-Music-Video-mp3cut.net.mp3?rlkey=vao6pq43vg8uhy41rjjn0e5zo&amp;st=14m2rlio&amp;raw=1"
+            src="https://www.dropbox.com/scl/fi/59l5xnmlz7ecz22n4yymt/Jessie-J-Flashlight-from-Pitch-Perfect-2-Official-Video.mp3?rlkey=yxqo54z5fmgy9vbbcaujvyyvd&amp;st=q2a6q6wb&amp;raw=1"
             type="audio/mpeg" />
     </audio>
 
@@ -8457,6 +8458,10 @@
             const meta = document.querySelector('meta[property="og:url"]');
             if (meta) {
                 meta.setAttribute("content", window.location.href);
+            }
+            const canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical) {
+                canonical.setAttribute('href', window.location.href);
             }
         });
     </script>
